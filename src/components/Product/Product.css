@@ -16,6 +16,7 @@
 }
 .product-info p{
     margin-bottom: 0;
+    margin-top: 5px;
 }
 .product-name{
     font-family: 'Lato';
@@ -34,5 +35,6 @@
     bottom: 0;
 }
 .btn-cart:hover{
-    background-color:aqua;
+    background-color:red;
+    color: white;
 }
