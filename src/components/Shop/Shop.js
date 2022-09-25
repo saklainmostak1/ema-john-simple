@@ -16,7 +16,7 @@ const Shop = () => {
         .then(Response => Response.json())
         .then(data => {
             setProducts(data)
-            console.log('product loaded')
+            
         })
     }, [])
 
@@ -33,12 +33,12 @@ const Shop = () => {
             }
         }
         setCart(savedCart)
-        // console.log('local storage finish')
+        
     }, [products])
 
     const handleAddToCart = (product) =>{
         console.log(product)
-        // cart.push(product)
+        
         const newCart = [...cart, product]
         setCart(newCart)
         addToDb(product.id)
